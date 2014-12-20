@@ -54,3 +54,5 @@ RawBlameHistory
 
 # KDE directory preferences
 .directory
+
+dist/

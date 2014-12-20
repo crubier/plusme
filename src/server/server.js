@@ -3,7 +3,7 @@ var Hexastore = require('hexastore');
 
 var server = Restify.createServer();
 var db = new Hexastore();
-db.importZip("palmaresdata");
+db.importZip('palmaresdata');
 
 function respond(req, res, next) {
   res.send('hello ' + req.params.name);
@@ -14,13 +14,13 @@ function respond(req, res, next) {
 
 function findAthleteYear(req,res,next) {
 var result=db.search([
-  [["team"],"has participation",["participation"]],
-  [["participation"],"in race",["race"]],
-  [["race"],"in competition",["competition"]],
-  [["competition"],"date",req.params.year],
-  [["competition"],"place",["place"]],
-  [["participation"],"with ranking",["ranking"]],
-  [req.params.name,"in team",["team"]]
+  [['team'],'has participation',['participation']],
+  [['participation'],'in race',['race']],
+  [['race'],'in competition',['competition']],
+  [['competition'],'date',req.params.year],
+  [['competition'],'place',['place']],
+  [['participation'],'with ranking',['ranking']],
+  [req.params.name,'in team',['team']]
   ]);
   res.send(result);
 }
