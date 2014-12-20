@@ -22,7 +22,7 @@ var result=db.search([
   [["participation"],"with ranking",["ranking"]],
   [req.params.name,"in team",["team"]]
   ]);
-  res.send(JSON.stringify(result));
+  res.send(result);
 }
 
 
