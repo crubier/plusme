@@ -38,7 +38,7 @@
     "testling": "^1.7.1",
     "vinyl-paths": "^1.0.0"
   },
-  "engine": {
+  "engines": {
     "node": "0.10.x",
     "npm": "2.1.x"
   }
