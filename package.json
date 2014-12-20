@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://www.github.com/crubier/plusme"
+    "url": "https://github.com/crubier/plusme.git"
   },
   "testling": {
     "harness": "mocha",
