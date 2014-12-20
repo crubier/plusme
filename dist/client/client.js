@@ -19808,5 +19808,5 @@ render: function() {
 
 React.render(React.createElement(HelloMessage, {name: "John"}), mountNode);
 
-}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_5c91ce75.js","/")
+}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_c6b0e831.js","/")
 },{"buffer":1,"oMfpAn":4,"react":150}]},{},[151])

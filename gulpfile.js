@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var browserify = require('gulp-browserify');
-var clean = require('gulp-clean');
+var del = require('del');
 
 
 gulp.task('default',['client-script','server-script']);
@@ -22,6 +22,5 @@ gulp.task('server-script', function() {
 
 
 gulp.task('clean', function () {
-  return gulp.src('dist', {read: false})
-  .pipe(clean());
+  return del(['dist']);
 });
