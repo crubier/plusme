@@ -1,6 +1,6 @@
 var restify = require('restify');
 
-var server = restify.createServer({name: 'PlusMe'});
+var server = restify.createServer();
 
 function respond(req, res, next) {
   res.send('hello ' + req.params.name);
@@ -12,5 +12,6 @@ server.get('/hello/:name', respond);
 server.head('/hello/:name', respond);
 
 server.listen(process.env.PORT || 5000, function() {
+  console.log(process.env.PORT);
   console.log('%s listening at %s', server.name, server.url);
 });
