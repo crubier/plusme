@@ -1,8 +1,9 @@
-A little test app with a REST API, using hexastore, deployed on Heroku at https://plusme-crubier.herokuapp.com
+A little test app with a REST API, using hexastore, deployed on Heroku.
 
-Server code in `src/server/server.js`
+Explanations in [the source](https://github.com/crubier/plusme/blob/master/src/server/server.js) of the server code.
 
-Example requests
+Example requests:
+
 https://plusme-crubier.herokuapp.com/athlete/Lecrubier%20Vincent/2008
 
 https://plusme-crubier.herokuapp.com/athlete/Lecrubier%20Vincent/2009
