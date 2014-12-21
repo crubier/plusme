@@ -40,7 +40,7 @@ var result=db.search([
 }
 
 // Envoi du html
-server.get('/index.html', restify.serveStatic({
+server.get('/index.html', Restify.serveStatic({
   'directory': 'dist/client',
   'default': 'index.html'
 }));
