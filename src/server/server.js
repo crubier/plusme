@@ -43,7 +43,7 @@ var result=db.search([
 server.get('/athletes', listAthletes);
 server.head('/athletes', listAthletes);
 
-function findAthleteYear(req,res,next) {
+function listAthletes(req,res,next) {
   var result=db.search([
     [['athlete'],'in team',['team']]
     ]);
