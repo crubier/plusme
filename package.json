@@ -38,6 +38,7 @@
     "hexastore": "^0.1.1",
     "mocha": "^2.0.1",
     "react": "^0.12.2",
+    "rest-js": "0.0.9",
     "restify": "^2.8.4",
     "testling": "^1.7.1",
     "vinyl-paths": "^1.0.0"
