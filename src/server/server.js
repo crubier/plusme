@@ -39,8 +39,11 @@ var result=db.search([
   return next();
 }
 
-
-
+// Envoi du html
+server.get(/.*/, restify.serveStatic({
+  'directory': 'dist/client',
+  'default': 'index.html'
+}));
 
 // Demarrage du serveur
 server.listen(process.env.PORT || 5000, function() {
