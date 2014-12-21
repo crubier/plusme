@@ -39,15 +39,27 @@ var result=db.search([
   return next();
 }
 
+// Reponse aux requetes "athletes"
+server.get('/athletes', listAthletes);
+server.head('/athletes', listAthletes);
+
+function findAthleteYear(req,res,next) {
+  var result=db.search([
+    [['athlete'],'in team',['team']]
+    ]);
+    res.send(result);
+    return next();
+  }
+
 // Envoi du html
-server.get('/index.html', Restify.serveStatic({
+server.get('/', Restify.serveStatic({
   'directory': 'dist/client',
   'default': 'index.html'
 }));
-server.get('/client.js', Restify.serveStatic({
-  'directory': 'dist/client',
-  'default': 'client.js'
-}));
+// server.get('/client.js', Restify.serveStatic({
+//   'directory': 'dist/client',
+//   'default': 'client.js'
+// }));
 
 // Demarrage du serveur
 server.listen(process.env.PORT || 5000, function() {
